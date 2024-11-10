@@ -10,7 +10,6 @@ const Timetable = ({ timetableData , quote}) => {
   return (
      <>
 
-     <TopLogo />
      <div className=" pb-2 shadow-lg w-[280px]">
 
      <div className="px-4 pb-6 pt-6">
