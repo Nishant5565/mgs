@@ -1,0 +1,68 @@
+/* Override default styles and add custom styles for react-calendar */
+
+.react-calendar {
+  border: none;
+  width: 100%;
+  padding: 6px  10px;
+}
+
+.react-calendar__navigation {
+  position: absolute;
+  transform: translateY(-50px) translateX(70%);
+}
+
+.react-calendar__tile {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  position: relative;
+  text-align: start;
+  padding: 4px 10px !important;
+}
+
+.react-calendar__tile--active {
+  background-color: #246c9c !important;
+  color: white;
+  border-radius: 8px;
+}
+
+.react-calendar__tile--now {
+  background-color: #f0f0f0;
+  border-radius: 8px;
+}
+
+.react-calendar__tile--now:enabled:hover,
+.react-calendar__tile--active:enabled:hover {
+  background-color: #246c9c !important;
+  color: white !important;
+}
+
+.event-tile {
+  border-radius: 8px;
+  color: white !important;
+}
+
+.event-tile.blue , .event-tile.blue:hover {
+  background-color: rgba(36, 108, 156, 0.3) !important;
+  color: rgba(36, 108, 156, 1 ) !important;
+ }
+
+.event-tile.pink, .event-tile.event-tile.pink:hover {
+  background-color: rgba(250, 72, 197, 0.3) !important;
+  color: rgba(250, 72, 197, 1 ) !important;
+}
+
+.event-tile.green, .event-tile.green:hover {
+  background-color: rgba(0, 128, 0, 0.3) !important;
+  color: rgba(0, 128, 0, 1 ) !important;
+}
+.event-label {
+  font-size: 0.75rem;
+  width: 100%;
+}
+.react-calendar button {
+  height: 39px;
+}
+.react-calendar react-calendar{
+  padding: 0 0px !important;
+}

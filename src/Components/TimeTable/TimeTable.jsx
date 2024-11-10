@@ -10,7 +10,7 @@ const Timetable = ({ timetableData , quote}) => {
   return (
      <>
 
-     <div className=" pb-2 shadow-lg w-[280px]">
+     <div className=" pb-2 shadow-lg w-[300px]">
 
      <div className="px-4 pb-6 pt-6">
         <h1 className=" font-semibold text-[18px] pb-4 text-gray-800">Hello, Aditya 👋</h1>

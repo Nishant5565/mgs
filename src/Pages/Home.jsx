@@ -1,13 +1,12 @@
 import React from 'react'
 import Timetable from '../Components/TimeTable/TimeTable'
-import { timetableData } from '../data.js'
-import {quote} from '../data.js'
 import AcademicDetails from '../Components/AcademicDetails/AcademicDetails'
+import { timetableData,quote, homeWorkData,attendanceData, tests ,eventsData} from '../data.js'
 const Home = () => {
   return (
     <div className="flex">
      <Timetable timetableData={timetableData} quote={quote}/>
-     <AcademicDetails />
+     <AcademicDetails homeWorkData={homeWorkData} attendanceData={attendanceData} tests={tests} eventsData={eventsData}/>
     </div>
   )
 }

@@ -2,7 +2,6 @@ import React from 'react';
 import { Doughnut } from 'react-chartjs-2';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 
-// Register the necessary components
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 const Chart = ({ attendedClasses, totalClasses }) => {
@@ -28,11 +27,11 @@ const Chart = ({ attendedClasses, totalClasses }) => {
       },
     },
     maintainAspectRatio: false,
-    devicePixelRatio: 2, // Increase the resolution
+    devicePixelRatio: 2, // for better resolution
   };
 
   return (
-    <div className="relative w-64 h-64">
+    <div className="relative w-64 h-48">
       <Doughnut data={data} options={options} />
       <div className="absolute inset-0 flex items-center justify-center">
         <span className="text-2xl font-bold text-gray-600">{`${attendedClasses}/${totalClasses}`}</span>
