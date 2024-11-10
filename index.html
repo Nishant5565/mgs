@@ -3,28 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://res.cloudinary.com/dsjyzqnwu/image/upload/v1725359081/TitleLogo_zjmlrf.png"
+      type="image/png"
+    />
     <script type="text/javascript">
 
       (function(l) {
-        if (l.search[1] === '~' && l.search.slice(2).split('&').length > 0) {
-          var q = l.search.slice(2).split('&');
-          for (var i = 0; i < q.length; i++) {
-            var p = q[i].split('=');
-            if (p.length === 2) {
-              var k = p[0];
-              var v = p[1];
-              if (k === 'p') {
-                var d = decodeURIComponent(v);
-                var s = document.createElement('script');
-                s.src = d;
-                document.head.appendChild(s);
-              }
-            }
-          }
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
         }
-      })(location);
-
+      }(window.location))
     </script>
+    <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet">
 
     <title>MGS</title>
     <script type="module" crossorigin src="/mgs/assets/index-CgLt3PVU.js"></script>
