@@ -5,9 +5,6 @@ import path from 'path'
 export default defineConfig({
   plugins: [react()],
   base : '/mgs/',
-  server: {
-    historyApiFallback: true, // handles all routes as fallback
-  },
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
