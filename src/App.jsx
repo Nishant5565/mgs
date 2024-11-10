@@ -12,7 +12,7 @@ import Notice from './Pages/Notice'
 function App() {
   const [user, setUser] = useState(null)
   return (
-    <Router basename='/msg'>
+    <Router basename='/mgs'>
       <Routes>
       <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
