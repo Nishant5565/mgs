@@ -1,10 +1,8 @@
 import React from 'react';
 import { FaRegCircleCheck } from "react-icons/fa6";
-import TopLogo from '../TopLogo/TopLogo';
 import LoadingArrows from '../../assets/images/loading-arrows.png';
 const Timetable = ({ timetableData , quote}) => {
   const today = new Date().toLocaleDateString();
-  // replace the / withe - in the date
   const todayDate = today.replace(/\//g, '-');
 
   return (

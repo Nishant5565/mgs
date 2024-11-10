@@ -1,7 +1,7 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
 import SideNav from '../Components/SideNav/SideNav'
-import TopLogo from '@/Components/TopLogo/TopLogo'
+import TopSection from '@/Components/TopSection/TopSection'
 const Layout = () => {
   return (
        <div className="flex">
@@ -9,7 +9,7 @@ const Layout = () => {
         <SideNav />
         </div >
           <div className="flex-1">
-          <TopLogo />
+          <TopSection />
 
           <Outlet />  
           </div>
