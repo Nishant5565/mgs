@@ -4,7 +4,7 @@ import path from 'path'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base : '/mgs',
+  base : '/mgs/',
   server: {
     historyApiFallback: true, // handles all routes as fallback
   },
