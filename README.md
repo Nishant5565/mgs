@@ -44,7 +44,7 @@ This is a web application for Mothers Global School, built with React, Vite, and
 1. Build the project for production:
 
      ```sh
-     npm run build
+     npm start
      ```
 
 2. The output will be in the `dist` directory.
